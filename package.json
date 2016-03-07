@@ -1,0 +1,26 @@
+{
+  "name": "@safari137/image_search",
+  "version": "1.0.0",
+  "description": "Image Search Abstraction Layer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/safari137/image_search.git"
+  },
+  "author": "David Dill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/safari137/image_search/issues"
+  },
+  "homepage": "https://github.com/safari137/image_search#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "got": "^6.2.0",
+    "mongodb": "^2.1.7",
+    "mongoose": "^4.4.6"
+  }
+}
