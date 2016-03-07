@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Shortener API</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+    </head>
+    <body>
+        <div class="container">
+            <h1>API Basejump: Image Search</h1>
+            
+            <blockquote>
+                User Stories:
+                <ul>
+                    <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li><br>
+                    <li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li><br>
+                    <li>I can get a list of the most recently submitted search strings.</li>
+                </ul>
+            </blockquote>
+            <hr>
+            <h3>Example search usage:</h3>
+            <code><a href="https://agile-escarpment-25197.herokuapp.com/api/imagesearch/dogs">https://agile-escarpment-25197.herokuapp.com/api/imagesearch/dogs</a></code>
+            <hr>
+            <h3>Example output:</h3>
+            <code>[{"url":"http://www.freeitblog.com/wp-content/uploads/dogs-2.jpg","thumbnail":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFwPRPN6BMChJovnnr8VRn40eZCTP7fTzhAEr9vumhrGySOVphP90XxfiP","snippet":"dogs picture","context":"http://www.freeitblog.com/dogs/"}...]</code>
+            <hr>
+            <h3>Example paginate search</h3>
+            <code><a href="https://agile-escarpment-25197.herokuapp.com/api/imagesearch/dogs?offset=10">https://agile-escarpment-25197.herokuapp.com/api/imagesearch/dogs?offset=10</a></code>
+            <h3>Example to retrieve last 10 searched items</h3>
+            <code><a href="https://agile-escarpment-25197.herokuapp.com/api/latest/imagesearch/">https://agile-escarpment-25197.herokuapp.com/api/latest/imagesearch/</a></code>
+            <hr>
+            <h3>Find the code at:</h3>
+            <a href="https://github.com/safari137/image_search">https://github.com/safari137/image_search</a>
+        </div>
+    </body>
+</html>

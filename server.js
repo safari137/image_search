@@ -25,6 +25,10 @@ let client = googleImages('017422373164043366310:1e0qvrkc5ls', 'AIzaSyC-DynV6dTH
 
 // Routes
 
+app.get('/', function(req, res) {
+   res.render('home'); 
+});
+
 app.get('/api/imagesearch/:search', function(req, res) {
     var search = req.params.search,
         query  = req.query,
