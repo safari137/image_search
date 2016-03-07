@@ -36,8 +36,11 @@ app.get('/api/imagesearch/:search', function(req, res) {
         
     addToHistory(search);
     
-    if (query.hasOwnProperty('offset'))
-        page = query.offset;
+    if (query.hasOwnProperty('offset')) {
+        if (!isNaN(query.offset)) {
+            page = query.offset;
+        } 
+    }
     
     client.search(search, {page: page})
         .then(function(images) {
